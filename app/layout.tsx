@@ -1,3 +1,4 @@
+import React from "react";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
@@ -5,7 +6,7 @@ import "./globals.css";
 // Import Poppins font
 const poppins = Poppins({
     subsets: ["latin"],
-    weight: ["300", "400", "500", "600", "700"], // You can adjust as needed
+    weight: ["300","400","500","600","700"] as any, // workaround TS + Turbo pack
     variable: "--font-poppins",
 });
 
